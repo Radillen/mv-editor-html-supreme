@@ -1,6 +1,10 @@
 # MV Editor HTML — Supreme Version | By @Radillen
 
-**Desenvolvido por Rodrigo Amorim Dillemburg.** Cliente complementar em HTML/JavaScript para uma instalação compatível do MV Editor, dispensando o Flash no navegador.
+**Interface HTML e melhorias por Rodrigo Amorim Dillemburg, com assistência de IA.**
+
+Módulo complementar para uma instalação compatível do MV Editor. Oferece uma interface em HTML/JavaScript para editar documentos sem depender do Flash no navegador.
+
+O projeto foi construído a partir da análise do funcionamento do editor original e utiliza os serviços do backend MV existente. Não substitui nem representa uma reimplementação completa do sistema MV.
 
 ## O que oferece
 
