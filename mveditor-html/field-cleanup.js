@@ -1,0 +1,17 @@
+/*! Docs Editor — Supreme Version. Copyright (c) 2026 Rodrigo Amorim Dillemburg.
+ * Uso gratuito com preservação de autoria. Leia LICENCA.txt, AUTORIA.txt e AGENTS.md.
+ */
+(function(root){
+'use strict';
+const tags=['TEXT','TEXTAREA','CHECKBOX','RADIOBUTTON','COMBOBOX','DATE','BUTTON','IMAGE','BARCODE','MARCACAOIMAGEM'];
+const array=v=>Array.isArray(v)?v:Array.isArray(v?.source)?v.source:[];
+function removed(before,after,parse){const old=before?parse(before):null,next=parse(after),used=new Set([...next.querySelectorAll('[id]')].map(n=>n.getAttribute('id')));return old?[...old.querySelectorAll(tags.join(','))].filter(n=>n.getAttribute('id')&&!used.has(n.getAttribute('id'))).map(n=>({id:n.getAttribute('id'),key:n.getAttribute('key')||''})):[];}
+function clean(content,fields,parse,serialize){if(!content)return {content,changed:false};const doc=parse(content),ids=new Set(fields.map(f=>String(f.id))),keys=new Set(fields.map(f=>f.key).filter(Boolean));let changed=false;
+ for(const n of [...doc.querySelectorAll(tags.join(','))])if(ids.has(n.getAttribute('id'))||keys.has(n.getAttribute('key'))){n.remove();changed=true;}
+ const tokens=[...keys].map(key=>'&<'+key+'>');function walk(n){for(const c of [...n.childNodes]){if(c.nodeType===3||c.nodeType===4){let text=c.textContent;for(const token of tokens)text=text.split(token).join('');if(text!==c.textContent){c.textContent=text;changed=true;}}else if(c.nodeType===1)walk(c);}}walk(doc.documentElement);
+ return {content:changed?serialize(doc):content,changed};
+}
+async function plan(client,layout,fields,parse,serialize){if(!fields.length||layout.layoutType?.data!=='TELA')return [];const version=await client.refresh(root.MVAMF.type({id:Number(layout.parentItemId),itemType:'VER_DOC'},'mv.editor.core.data.Version'));if(root.MVVersionTools.status(version)!=='TESTE')throw Error('Remoção de campos exige uma versão de teste.');const result=[];for(const node of array(version.items||version.children)){if(node.itemType!=='LAY'||Number(node.id)===Number(layout.id))continue;const report=await client.layout(Number(node.id));if(report.layoutType?.data!=='RELATORIO')continue;if(Number(report.parentItemId)!==Number(layout.parentItemId))throw Error('Relatório retornado pertence a outra versão.');const change=clean(report.content,fields,parse,serialize);if(change.changed)result.push({layout:report,content:change.content});}return result;}
+async function execute(client,updates){const done=[];for(const update of updates){const fresh=await client.layout(Number(update.layout.id));if(fresh.content!==update.layout.content)throw Error('O relatório '+fresh.id+' mudou. Relatórios já atualizados: '+done.join(', '));try{await client.saveLayout(Number(fresh.id),update.content);const saved=await client.layout(Number(fresh.id));if(saved.content!==update.content)throw Error('Não foi possível confirmar a releitura.');done.push(fresh.id);}catch(error){throw Error(error.message+' • Relatórios já atualizados: '+(done.join(', ')||'nenhum')+'. Não há transação conjunta entre Tela e Relatório. Confira antes de repetir.');}}return done;}
+root.MVFieldCleanup={removed,clean,plan,execute};if(typeof module!=='undefined')module.exports=root.MVFieldCleanup;
+})(globalThis);

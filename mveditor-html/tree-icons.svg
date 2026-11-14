@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="folder" viewBox="0 0 24 24"><path d="M2 6h8l2 2h10l-2 12H2z" fill="#f4bd3c" stroke="#a86b12"/><path d="M2 8h20" stroke="#fff2b7" stroke-width="2"/></symbol>
+<symbol id="repository" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="7" ry="3" fill="#ffe08b" stroke="#a57313"/><path d="M5 5v14c0 4 14 4 14 0V5" fill="#eab83b" stroke="#a57313"/><ellipse cx="12" cy="5" rx="7" ry="3" fill="#ffe08b" stroke="#a57313"/></symbol>
+<symbol id="document" viewBox="0 0 24 24"><path d="M5 2h10l5 5v15H5z" fill="#eef8fa" stroke="#588893"/><path d="M15 2v6h5M8 11h9M8 14h9M8 17h7" fill="none" stroke="#719aa4"/></symbol>
+<symbol id="report" viewBox="0 0 24 24"><use href="#document"/><path d="M8 10h3v3H8zM8 16h3v3H8z" fill="#3285bb"/><path d="M13 11h4m-4 6h4" stroke="#3285bb"/></symbol>
+<symbol id="screen" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="1" fill="#d5f0fb" stroke="#245571" stroke-width="1.5"/><path d="M3 14h18M12 17v4m-5 1h10" stroke="#245571" stroke-width="2"/></symbol>
+<symbol id="published" viewBox="0 0 24 24"><path d="m3 12 6 6L21 4" fill="none" stroke="#6ca744" stroke-width="4"/></symbol>
+<symbol id="version" viewBox="0 0 24 24"><path d="m4 15 11-11 5 5L9 20l-6 1z" fill="#ffd36b" stroke="#9b6c22" stroke-width="1.2"/><path d="m15 4 2-2c1-1 2-1 3 0l2 2c1 1 1 2 0 3l-2 2z" fill="#ed998d" stroke="#9b6c22"/><path d="m4 15 5 5m-4-3 12-12M3 21l1-4 3 3z" fill="none" stroke="#9b6c22"/></symbol>
+<symbol id="text" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="13" fill="#f9fbfe" stroke="#6f879d"/><text x="4" y="16" font-family="Arial" font-size="11" fill="#243b53">abc</text></symbol>
+<symbol id="number" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="13" fill="#f9fbfe" stroke="#6f879d"/><text x="3" y="16" font-family="Arial" font-size="10" fill="#243b53">123</text></symbol>
+<symbol id="textarea" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="19" fill="#fff" stroke="#6f879d"/><path d="M6 7h12M6 11h12M6 15h9M6 19h7" stroke="#4c8cb6"/></symbol>
+<symbol id="select" viewBox="0 0 24 24"><use href="#textarea"/><rect x="12" y="3" width="9" height="6" fill="#e0edf9" stroke="#6f879d"/><path d="m15 5 2 2 2-2" fill="none" stroke="#3d6688"/></symbol>
+<symbol id="checkbox" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" fill="#fff" stroke="#879780"/><path d="m7 11 4 5 7-9" fill="none" stroke="#6b9d37" stroke-width="3"/></symbol>
+<symbol id="radio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="#d8e8f4" stroke="#66849d"/><circle cx="12" cy="12" r="4" fill="#3a82b3"/></symbol>
+<symbol id="date" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="1" fill="#fff" stroke="#677d91"/><path d="M3 9h18" stroke="#3e88bb" stroke-width="4"/><path d="M8 2v5m8-5v5M7 13h3m3 0h4M7 17h3m3 0h4" stroke="#677d91" stroke-width="2"/></symbol>
+<symbol id="image" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" fill="#fffaf0" stroke="#9a956f"/><circle cx="16" cy="7" r="2.5" fill="#eab542"/><path d="m3 20 7-10 5 6 3-3 4 7" fill="#b39b54"/></symbol>
+<symbol id="rule" viewBox="0 0 24 24"><path d="M4 3h9v5H4zm7 13h9v5h-9zM8 8v10h3m-3-5h10V8" fill="#e0d5f5" stroke="#8660ac" stroke-width="1.5"/></symbol>
+<symbol id="parameter" viewBox="0 0 24 24"><text x="2" y="18" font-family="Arial" font-size="18" font-weight="bold" fill="#6b648d">{p}</text></symbol>
+<symbol id="field" viewBox="0 0 24 24"><use href="#textarea"/></symbol>
+<symbol id="grid" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" fill="#fff" stroke="#6f879d"/><path d="M2 8h20M2 14h20M9 3v18m7-18v18" stroke="#6f879d"/></symbol>
+<symbol id="button" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="13" rx="3" fill="#d9e8f5" stroke="#4c7da3"/><path d="m11 9 4 3-4 3" fill="none" stroke="#4c7da3"/></symbol>
+<symbol id="barcode" viewBox="0 0 24 24"><path d="M3 4v16m3-16v16m4-16v16m3-16v16m5-16v16m3-16v16" stroke="#354959" stroke-width="2"/></symbol>
+</svg>

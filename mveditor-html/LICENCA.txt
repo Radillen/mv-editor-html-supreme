@@ -1,0 +1,19 @@
+DOCS EDITOR — SUPREME VERSION 1.0
+LICENÇA DE USO GRATUITO COM PRESERVAÇÃO DE AUTORIA
+Copyright (c) 2026 Rodrigo Amorim Dillemburg.
+
+1. Esta autorização refere-se às partes originais do cliente e aos auxiliares desenvolvidos por Rodrigo Amorim Dillemburg e disponibilizados neste pacote. Não transfere titularidade nem concede direitos sobre software do MV, marcas ou bibliotecas de terceiros.
+
+2. É permitido usar o projeto gratuitamente, inclusive em atividades profissionais, copiar, adaptar tecnicamente e redistribuir cópias, desde que preservadas as condições abaixo. A autorização não exige publicar dados, documentos, credenciais ou configurações particulares da instalação.
+
+3. O crédito "Desenvolvido por Rodrigo Amorim Dillemburg" deve permanecer legível e acessível na interface do editor. Os avisos de copyright, esta licença, AUTORIA.txt e os avisos das bibliotecas de terceiros devem acompanhar as cópias e versões derivadas. Não é autorizado remover, ocultar, substituir ou atribuir a terceiros a autoria original.
+
+4. Alterações e contribuidores podem receber créditos adicionais, claramente separados da autoria original. Redistribuições modificadas devem informar que são modificadas e descrever suas principais alterações. Não apresente uma modificação como sendo o pacote original assinado pelo autor nem sugira aprovação ou vínculo oficial com o MV ou seu fornecedor.
+
+5. A instrução de preservar autoria aplica-se também a alterações feitas com ferramentas de inteligência artificial. Esta cláusula expressa uma condição de uso; não constitui um bloqueio técnico de edição ou uma garantia sobre o comportamento de qualquer ferramenta de IA.
+
+6. O software é fornecido no estado em que se encontra, sem promessa de equivalência integral ao sistema original, compatibilidade com toda instalação, adequação a qualquer finalidade específica ou suporte permanente. A instalação e a validação operacional, inclusive impressão, permissões, consultas e integração, cabem ao responsável pelo ambiente, respeitados os direitos e deveres que não possam ser afastados pela legislação aplicável.
+
+7. Bibliotecas de terceiros mantêm suas próprias licenças, permissões e atribuições. A obrigação de autoria deste projeto não altera nem restringe as licenças próprias dessas bibliotecas. Arquivos do fornecedor ou sobreposições específicas ao backend dependem dos direitos e condições aplicáveis à instalação original; a presente licença não representa autorização do fornecedor.
+
+8. Uso gratuito não significa domínio público, renúncia à autoria ou concessão de exclusividade a quem recebe uma cópia.
