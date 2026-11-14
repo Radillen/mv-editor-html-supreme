@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="pt-BR"><meta charset="utf-8"><meta name="referrer" content="no-referrer"><title>Retorno ao editor HTML</title>
+<style>body{font:16px Arial;margin:60px auto;max-width:650px;color:#24506d}a{color:#146ca5}</style>
+<h1>Acesso central concluído</h1><p>Volte à janela do editor HTML e clique em verificar conexão, se ela ainda estiver aberta.</p>
+<p id="result" role="status"></p><a href="../mveditor-html/">Abrir editor HTML</a>
+<script>
+'use strict';
+// This file must live in /mveditor/: the existing CAS filter protects *.html.
+// Never forwards tickets, session identifiers or credentials.
+if(window.opener){window.opener.postMessage({type:'MVEDITOR_CAS_RETURN'},location.origin);document.getElementById('result').textContent='Retorno comunicado ao editor.';}
+</script></html>

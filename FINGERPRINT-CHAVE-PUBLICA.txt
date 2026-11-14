@@ -1,0 +1,3 @@
+SHA-256 SPKI DER: 3c162da83d66cec91b9ad17c7bf233e7cb5c276ced9c372d278eb588a66eaa55
+Autor: Rodrigo Amorim Dillemburg
+Compare com a publicação independente do autor.

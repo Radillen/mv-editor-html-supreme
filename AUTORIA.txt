@@ -1,0 +1,8 @@
+Docs Editor — Supreme Version 1.0
+Desenvolvido por Rodrigo Amorim Dillemburg.
+Copyright (c) 2026 Rodrigo Amorim Dillemburg.
+
+Distribuição gratuita com preservação da autoria, conforme LICENCA.txt.
+O nome do autor original deve permanecer visível na interface e nos avisos do projeto.
+Contribuições e alterações podem receber créditos adicionais, sem substituir o autor original.
+Não é uma versão oficial ou patrocinada pelo fornecedor do MV.
