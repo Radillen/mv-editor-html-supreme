@@ -1,6 +1,4 @@
-/*! Docs Editor — Supreme Version. Copyright (c) 2026 Rodrigo Amorim Dillemburg.
- * Uso gratuito com preservação de autoria. Leia LICENCA.txt, AUTORIA.txt e AGENTS.md.
- */
+/* Copyright (c) 2026 Rodrigo Amorim Dillemburg. Interface HTML e melhorias. Veja LICENCA.txt e TERCEIROS.md. */
 /* Report-only preparation: text runs, toggle centers and single-line value baselines. No shared metadata, answers, bands or PDF engine changes. */
 (function(root){
 'use strict';
@@ -121,7 +119,8 @@ function normalizeFontSizes(doc){let changed=0;for(const node of doc.querySelect
 function normalizeLineWidths(doc){let changed=0;for(const node of doc.querySelectorAll('FRAME[lineThickness],HRULE[lineThickness],VRULE[lineThickness]')){const raw=node.getAttribute('lineThickness'),value=Number(raw);if(!String(raw).trim()||!Number.isFinite(value)||value<0)throw Error('Espessura de linha inválida em '+node.tagName+': '+raw);const next=String(Math.max(0,Math.min(30,Math.round(value))));if(raw!==next){node.setAttribute('lineThickness',next);changed++;}}return changed;}
 async function prepare(doc){
  const backgrounds=globalThis.MVLayoutOperations?.normalizeTextBackgrounds(doc)||0;
- const result={backgrounds,pages:0,labels:0,runs:0,toggles:0,values:0,lines:normalizeLineWidths(doc),fonts:normalizeFontSizes(doc),spacing:normalizeTextSpacing(doc),skipped:[],already:0};
+ const policy=root.MVFontPolicy.normalizeDocument(doc);
+ const result={families:policy.changed,fontReplacements:policy.replacements,backgrounds,pages:0,labels:0,runs:0,toggles:0,values:0,lines:normalizeLineWidths(doc),fonts:normalizeFontSizes(doc),spacing:normalizeTextSpacing(doc),skipped:[],already:0};
  if(doc.documentElement?.getAttribute('mvPageBreaks')!=='explicit-v1'){doc.documentElement?.setAttribute('mvPageBreaks','explicit-v1');result.pages=1;}
  for(const band of doc.querySelectorAll('BAND'))if(band.getAttribute('mvPageBreaks')!=='explicit-v1'){band.setAttribute('mvPageBreaks','explicit-v1');result.pages++;}
  if(document.fonts?.ready)await document.fonts.ready;

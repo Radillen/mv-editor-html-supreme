@@ -1,6 +1,6 @@
 # Revisão do pacote para publicação
 
-Data: 14/11/2026. Autor: Rodrigo Amorim Dillemburg.
+Data: 16/11/2026. Autor: Rodrigo Amorim Dillemburg.
 
 ## Escopo
 
@@ -21,3 +21,7 @@ As bibliotecas abertas incluídas conservam suas licenças. O JAR incluído em c
 A varredura por padrões e a revisão manual não são uma prova matemática de ausência de todo segredo ou uma auditoria de segurança completa do produto. Antes de publicar alterações futuras, revise também os novos arquivos, sua configuração e os arquivos exibidos pelo GitHub. Nunca envie a pasta de desenvolvimento completa.
 
 As instruções de autoria estão na raiz, nos avisos dos arquivos originais, em mveditor-html/AGENTS.md e em mveditor-html/WEB-INF/autoria/. Elas não são credenciais, não constituem bloqueio técnico e não garantem cumprimento por toda ferramenta de IA.
+
+## Atualização desta revisão
+
+A cópia pública usa o cliente atual e uma configuração genérica. Guias e complementos anteriores foram conferidos contra o manifesto assinado do autor. A chave privada de assinatura permanece fora do pacote. Esta revisão não abrange o histórico remoto do GitHub nem arquivos enviados separadamente pelo navegador.

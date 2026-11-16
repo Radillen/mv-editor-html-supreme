@@ -1,6 +1,4 @@
-/*! Docs Editor — Supreme Version. Copyright (c) 2026 Rodrigo Amorim Dillemburg.
- * Uso gratuito com preservação de autoria. Leia LICENCA.txt, AUTORIA.txt e AGENTS.md.
- */
+/* Copyright (c) 2026 Rodrigo Amorim Dillemburg. Interface HTML e melhorias. Veja LICENCA.txt e TERCEIROS.md. */
 (function(root){
 'use strict';
 const allowed={TEXTFORMAT:['LEADING','LEFTMARGIN','RIGHTMARGIN','INDENT','BLOCKINDENT','TABSTOPS'],P:['ALIGN'],FONT:['FACE','SIZE','COLOR','LETTERSPACING','KERNING'],B:[],I:[],U:[],BR:[],UL:[],LI:[],SPAN:[]};

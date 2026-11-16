@@ -1,6 +1,4 @@
-/*! Docs Editor — Supreme Version. Copyright (c) 2026 Rodrigo Amorim Dillemburg.
- * Uso gratuito com preservação de autoria. Leia LICENCA.txt, AUTORIA.txt e AGENTS.md.
- */
+/* Copyright (c) 2026 Rodrigo Amorim Dillemburg. Interface HTML e melhorias. Veja LICENCA.txt e TERCEIROS.md. */
 (function(){
 'use strict';
 const shell=document.querySelector('.shell'),sidebar=document.querySelector('.sidebar'),bar=document.createElement('div');bar.className='sidebarResize';bar.tabIndex=0;bar.setAttribute('role','separator');bar.setAttribute('aria-label','Largura da barra lateral');bar.setAttribute('aria-orientation','vertical');bar.title='Arraste para redimensionar a lateral; setas ajustam pelo teclado';sidebar.after(bar);

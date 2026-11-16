@@ -12,3 +12,7 @@ Bibliotecas locais incluídas:
 - Fontes padrão usadas pelo PDF.js: avisos próprios em mveditor-html/vendor/standard_fonts/. Preserve os respectivos arquivos LICENSE.
 
 Essas bibliotecas conservam suas licenças e créditos. A condição de autoria do Docs Editor não substitui as permissões concedidas pelos titulares dessas bibliotecas.
+
+## Compatibilidade do cliente
+
+Os arquivos PDF.js para compatibilidade do navegador preservam o código e os avisos de PDF.js. Os auxiliares core-js conservam sua licença em `mveditor-html/vendor/COREJS-LICENSE`. As cópias upstream e os arquivos de licença também acompanham a distribuição.

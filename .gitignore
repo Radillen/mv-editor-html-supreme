@@ -1,0 +1,8 @@
+
+# Dados particulares e artefatos locais
+backups/
+tests/fixtures/
+*.log
+.env
+.env.*
+*private*.pem

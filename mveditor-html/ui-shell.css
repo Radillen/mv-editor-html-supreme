@@ -1,6 +1,4 @@
-/*! Docs Editor — Supreme Version. Copyright (c) 2026 Rodrigo Amorim Dillemburg.
- * Uso gratuito com preservação de autoria. Leia LICENCA.txt, AUTORIA.txt e AGENTS.md.
- */
+/* Copyright (c) 2026 Rodrigo Amorim Dillemburg. Interface HTML e melhorias. Veja LICENCA.txt e TERCEIROS.md. */
 /* Interface skin. Document, field and print geometry styles stay in style.css. */
 body.uiRefresh{--ink:#123458;--sky:#059dff;--navy:#092e55;margin:0;background:#dbe9f9;color:var(--ink);font-family:Arial,sans-serif}
 .uiRefresh header{height:64px;background:linear-gradient(110deg,#0b4278,#0d3865 55%,#071f3c);border:0;gap:22px;padding:0 18px;position:relative;overflow:hidden;box-shadow:0 2px 6px #0c34554a}

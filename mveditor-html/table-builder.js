@@ -1,6 +1,4 @@
-/*! Docs Editor — Supreme Version. Copyright (c) 2026 Rodrigo Amorim Dillemburg.
- * Uso gratuito com preservação de autoria. Leia LICENCA.txt, AUTORIA.txt e AGENTS.md.
- */
+/* Copyright (c) 2026 Rodrigo Amorim Dillemburg. Interface HTML e melhorias. Veja LICENCA.txt e TERCEIROS.md. */
 (function(root){
 'use strict';
 function headers(text){const values=String(text).split(/\r?\n/).map(v=>v.trim()).filter(Boolean);if(!values.length)throw Error('Escreva pelo menos um título, um por linha. Cada título cria uma coluna.');if(values.length>12)throw Error('Use até 12 títulos/colunas.');return values;}
